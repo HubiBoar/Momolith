@@ -8,8 +8,9 @@
 
     <ItemGroup>
         <PackageReference Include="OneOf" />
-        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" />
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+        <PackageReference Include="Explicit.Configuration" />
+        <PackageReference Include="Explicit.Validation.FluentValidation" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
     </ItemGroup>
-
+    
 </Project>
