@@ -11,7 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Momolith.Modules\Momolith.Modules\Momolith.Modules.csproj" />
+      <ProjectReference Include="..\Momolith.Modules\Momolith.Modules.csproj" />
     </ItemGroup>
 
 
