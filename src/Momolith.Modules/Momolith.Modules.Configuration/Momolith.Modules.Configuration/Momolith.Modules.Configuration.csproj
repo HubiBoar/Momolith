@@ -9,6 +9,7 @@
     <ItemGroup>
         <PackageReference Include="Explicit.Arguments" />
         <PackageReference Include="Explicit.Validation" />
+        <PackageReference Include="Explicit.Configuration" />
         <PackageReference Include="Microsoft.Extensions.Configuration" />
     </ItemGroup>
 

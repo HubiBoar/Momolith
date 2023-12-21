@@ -38,6 +38,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.ConfigurationAsCod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Modules.Configuration", "Momolith.Modules\Momolith.Modules.Configuration\Momolith.Modules.Configuration\Momolith.Modules.Configuration.csproj", "{6AF2C175-C9D5-4787-9913-A276A3F2A86C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.DeploymentAsCode", "Momolith.DeploymentAsCode", "{37672358-258B-4FBA-BBF0-8A23FD53798D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.DeploymentAsCode", "Momolith.DeploymentAsCode\Momolith.DeploymentAsCode\Momolith.DeploymentAsCode.csproj", "{4F820433-417C-4878-BBDC-46CB578BD97A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +80,10 @@ Global
 		{6AF2C175-C9D5-4787-9913-A276A3F2A86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AF2C175-C9D5-4787-9913-A276A3F2A86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AF2C175-C9D5-4787-9913-A276A3F2A86C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F820433-417C-4878-BBDC-46CB578BD97A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F820433-417C-4878-BBDC-46CB578BD97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F820433-417C-4878-BBDC-46CB578BD97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F820433-417C-4878-BBDC-46CB578BD97A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2F32EDCF-575C-492F-8BA8-27869306E7A6} = {EEB3EBA0-FCFF-4CA0-9E00-F4D94E8F66BA}
@@ -92,5 +100,6 @@ Global
 		{83DCAC63-38D4-4CFC-A703-9A532B6F41B4} = {E2ECCF3B-622C-4436-9075-3C1EF0B1158C}
 		{F3B770AF-5B1D-4490-B044-E6EE4C17A3B3} = {C2F2AE42-0625-4637-98E1-5522CE2AE080}
 		{6AF2C175-C9D5-4787-9913-A276A3F2A86C} = {1480859B-D233-4BBD-B94D-1599A7A626B6}
+		{4F820433-417C-4878-BBDC-46CB578BD97A} = {37672358-258B-4FBA-BBF0-8A23FD53798D}
 	EndGlobalSection
 EndGlobal
