@@ -4,8 +4,8 @@ namespace Momolith.Modules.Messaging.Default;
 
 public static class InMemoryMessagingProvider
 {
-    public static MessagingComponent GetMessaging(IHostApplicationBuilder startup)
+    public static MessagingModule GetMessaging(IHostApplicationBuilder startup)
     {
-        return MessagingComponent.Create<InMemoryMessagingConfiguration>(startup);
+        return MessagingModule.Create<InMemoryMessagingConfiguration>(startup);
     }
 }
