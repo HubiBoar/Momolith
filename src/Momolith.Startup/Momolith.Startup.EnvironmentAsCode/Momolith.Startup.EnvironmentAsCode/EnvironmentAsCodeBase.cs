@@ -2,7 +2,7 @@
 using Explicit.Validation.FluentValidation;
 using Microsoft.Extensions.Configuration;
 
-namespace Momolith.Startup.Environment;
+namespace Momolith.Startup.EnvironmentAsCode;
 
 public sealed record EnvironmentAsCodeEnv(string EnvironmentName);
 

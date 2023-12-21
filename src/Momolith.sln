@@ -20,13 +20,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Modules.Storage", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Startup", "Momolith.Startup", "{C45DD128-5CB1-49E4-B384-4D0B75AAEAA4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Startup.Environment", "Momolith.Startup.Environment", "{E77D6FD7-D67E-446A-9621-9BDFB97F5624}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Startup.EnvironmentAsCode", "Momolith.Startup.EnvironmentAsCode", "{E77D6FD7-D67E-446A-9621-9BDFB97F5624}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Startup.Dependencies", "Momolith.Startup.Dependencies", "{685E9599-2953-4BC2-80E4-77C733E37316}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Startup.DependencyAsCode", "Momolith.Startup.DependencyAsCode", "{685E9599-2953-4BC2-80E4-77C733E37316}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Startup.DependenciesValidation", "Momolith.Startup.DependenciesValidation", "{44ABC40F-A97F-4528-8BD0-8F0D7A968289}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Startup.Environment", "Momolith.Startup\Momolith.Startup.Environment\Momolith.Startup.Environment\Momolith.Startup.Environment.csproj", "{1233C0A3-E037-437C-A757-735A95C36046}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Startup.EnvironmentAsCode", "Momolith.Startup\Momolith.Startup.EnvironmentAsCode\Momolith.Startup.EnvironmentAsCode\Momolith.Startup.EnvironmentAsCode.csproj", "{1233C0A3-E037-437C-A757-735A95C36046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Startup.DependencyAsCode", "Momolith.Startup\Momolith.Startup.DependencyAsCode\Momolith.Startup.DependencyAsCode\Momolith.Startup.DependencyAsCode.csproj", "{8B3FDEFE-265E-4A87-A05E-2DB76B202A3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +48,10 @@ Global
 		{1233C0A3-E037-437C-A757-735A95C36046}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1233C0A3-E037-437C-A757-735A95C36046}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1233C0A3-E037-437C-A757-735A95C36046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3FDEFE-265E-4A87-A05E-2DB76B202A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3FDEFE-265E-4A87-A05E-2DB76B202A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3FDEFE-265E-4A87-A05E-2DB76B202A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3FDEFE-265E-4A87-A05E-2DB76B202A3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2F32EDCF-575C-492F-8BA8-27869306E7A6} = {EEB3EBA0-FCFF-4CA0-9E00-F4D94E8F66BA}
@@ -60,5 +66,6 @@ Global
 		{685E9599-2953-4BC2-80E4-77C733E37316} = {C45DD128-5CB1-49E4-B384-4D0B75AAEAA4}
 		{44ABC40F-A97F-4528-8BD0-8F0D7A968289} = {C45DD128-5CB1-49E4-B384-4D0B75AAEAA4}
 		{1233C0A3-E037-437C-A757-735A95C36046} = {E77D6FD7-D67E-446A-9621-9BDFB97F5624}
+		{8B3FDEFE-265E-4A87-A05E-2DB76B202A3D} = {685E9599-2953-4BC2-80E4-77C733E37316}
 	EndGlobalSection
 EndGlobal

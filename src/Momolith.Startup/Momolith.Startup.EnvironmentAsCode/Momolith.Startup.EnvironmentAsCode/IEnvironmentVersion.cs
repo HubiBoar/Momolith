@@ -1,4 +1,4 @@
-﻿namespace Momolith.Startup.Environment;
+﻿namespace Momolith.Startup.EnvironmentAsCode;
 
 public interface IEnvironmentVersion
 {

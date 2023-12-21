@@ -1,4 +1,4 @@
-﻿namespace Momolith.Startup.Environment;
+﻿namespace Momolith.Startup.EnvironmentAsCode;
 
 public abstract class EnvironmentAsCodeBase<T0, T1> : EnvironmentAsCodeBase<EnvironmentAsCodeBase<T0, T1>>, IEnvironments
     where T0 : IEnvironmentVersion
