@@ -1,7 +1,7 @@
 ﻿using Explicit.Utils;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Momolith.Startup.DependencyAsCode;
+namespace Momolith.DependencyAsCode;
 
 
 public static class ServicesCollectionExtensions

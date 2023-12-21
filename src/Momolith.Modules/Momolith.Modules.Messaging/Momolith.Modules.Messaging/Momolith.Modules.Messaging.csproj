@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>$(Dotnet)</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Explicit.Arguments"/>
+        <PackageReference Include="Explicit.Utils"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Momolith.InfrastructureAsCode\Momolith.InfrastructureAsCode\Momolith.InfrastructureAsCode.csproj"/>
+      <ProjectReference Include="..\..\Momolith.Modules\Momolith.Modules\Momolith.Modules.csproj"/>
+    </ItemGroup>
+
+</Project>

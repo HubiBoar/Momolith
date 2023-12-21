@@ -1,4 +1,4 @@
-﻿namespace Momolith.Startup.EnvironmentAsCode;
+﻿namespace Momolith.EnvironmentAsCode;
 
 
 public sealed class EnvironmentName

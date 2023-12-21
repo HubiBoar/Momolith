@@ -1,4 +1,4 @@
-﻿namespace Momolith.Startup.DependencyAsCode;
+﻿namespace Momolith.DependencyAsCode;
 
 public interface IDependencyAsCode
 {

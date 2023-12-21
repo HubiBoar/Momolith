@@ -1,6 +1,6 @@
-﻿namespace Momolith.Startup.EnvironmentAsCode;
+﻿namespace Momolith.EnvironmentAsCode;
 
-public abstract class EnvironmentAsCodeBase<T0, T1> : EnvironmentAsCodeBase<EnvironmentAsCodeBase<T0, T1>>, IEnvironments
+public abstract class EnvironmentAsCodeAsCodeBase<T0, T1> : EnvironmentAsCodeBase<EnvironmentAsCodeAsCodeBase<T0, T1>>, IEnvironmentAsCode
     where T0 : IEnvironmentVersion
     where T1 : IEnvironmentVersion
 {
@@ -10,7 +10,7 @@ public abstract class EnvironmentAsCodeBase<T0, T1> : EnvironmentAsCodeBase<Envi
         new EnvironmentName(T1.Name)
     };
     
-    protected EnvironmentAsCodeBase(EnvironmentAsCodeEnv environment) : base(environment)
+    protected EnvironmentAsCodeAsCodeBase(EnvironmentAsCodeName environment) : base(environment)
     {
     }
 
@@ -26,7 +26,7 @@ public abstract class EnvironmentAsCodeBase<T0, T1> : EnvironmentAsCodeBase<Envi
     }
 }
 
-public abstract class EnvironmentAsCodeBase<T0, T1, T2> : EnvironmentAsCodeBase<EnvironmentAsCodeBase<T0, T1, T2>>, IEnvironments
+public abstract class EnvironmentAsCodeAsCodeBase<T0, T1, T2> : EnvironmentAsCodeBase<EnvironmentAsCodeAsCodeBase<T0, T1, T2>>, IEnvironmentAsCode
     where T0 : IEnvironmentVersion
     where T1 : IEnvironmentVersion
     where T2 : IEnvironmentVersion
@@ -38,7 +38,7 @@ public abstract class EnvironmentAsCodeBase<T0, T1, T2> : EnvironmentAsCodeBase<
         new EnvironmentName(T2.Name)
     };
     
-    protected EnvironmentAsCodeBase(EnvironmentAsCodeEnv environment) : base(environment)
+    protected EnvironmentAsCodeAsCodeBase(EnvironmentAsCodeName environment) : base(environment)
     {
     }
 
@@ -57,7 +57,7 @@ public abstract class EnvironmentAsCodeBase<T0, T1, T2> : EnvironmentAsCodeBase<
 }
 
 
-public abstract class EnvironmentAsCodeBase<T0, T1, T2, T3> : EnvironmentAsCodeBase<EnvironmentAsCodeBase<T0, T1, T2, T3>>, IEnvironments
+public abstract class EnvironmentAsCodeAsCodeBase<T0, T1, T2, T3> : EnvironmentAsCodeBase<EnvironmentAsCodeAsCodeBase<T0, T1, T2, T3>>, IEnvironmentAsCode
     where T0 : IEnvironmentVersion
     where T1 : IEnvironmentVersion
     where T2 : IEnvironmentVersion
@@ -71,7 +71,7 @@ public abstract class EnvironmentAsCodeBase<T0, T1, T2, T3> : EnvironmentAsCodeB
         new EnvironmentName(T3.Name)
     };
     
-    protected EnvironmentAsCodeBase(EnvironmentAsCodeEnv environment) : base(environment)
+    protected EnvironmentAsCodeAsCodeBase(EnvironmentAsCodeName environment) : base(environment)
     {
     }
 

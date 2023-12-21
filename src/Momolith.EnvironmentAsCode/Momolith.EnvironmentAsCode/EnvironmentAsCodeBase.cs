@@ -2,25 +2,25 @@
 using Explicit.Validation.FluentValidation;
 using Microsoft.Extensions.Configuration;
 
-namespace Momolith.Startup.EnvironmentAsCode;
+namespace Momolith.EnvironmentAsCode;
 
-public sealed record EnvironmentAsCodeEnv(string EnvironmentName);
+public sealed record EnvironmentAsCodeName(string EnvironmentName);
 
 public sealed record EnvironmentParameters(EnvironmentName Name, int Index);
 
-public interface IEnvironments
+public interface IEnvironmentAsCode
 {
     public static abstract IReadOnlyCollection<EnvironmentName> Environments { get; }
 }
 
 public abstract class EnvironmentAsCodeBase<TEnvs>
-    where TEnvs : IEnvironments
+    where TEnvs : IEnvironmentAsCode
 {
     public EnvironmentName Name => Parameters.Name;
 
     protected EnvironmentParameters Parameters { get; }
 
-    protected EnvironmentAsCodeBase(EnvironmentAsCodeEnv environment)
+    protected EnvironmentAsCodeBase(EnvironmentAsCodeName environment)
     {
         var index = TEnvs.Environments.ToList().FindIndex(x => x.Name == environment.EnvironmentName);
 
@@ -34,10 +34,10 @@ public abstract class EnvironmentAsCodeBase<TEnvs>
         Parameters = new EnvironmentParameters(environmentName, index);
     }
     
-    protected static EnvironmentAsCodeEnv DefaultEnvironmentSetting(IConfiguration configuration)
+    protected static EnvironmentAsCodeName DefaultEnvironmentSetting(IConfiguration configuration)
     {
         return configuration.GetValid<EnvironmentSetting>().Basic.Match(
-            valid => new EnvironmentAsCodeEnv(valid.Value),
+            valid => new EnvironmentAsCodeName(valid.Value),
             errors => throw errors.ToException());
     }
     
