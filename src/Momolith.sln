@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Modules", "Momolith.Modules\Momolith.Modules\Momolith.Modules\Momolith.Modules.csproj", "{2F32EDCF-575C-492F-8BA8-27869306E7A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Modules", "Momolith.Modules", "{822DBB09-D6DE-470F-899A-EB51A6BE1BF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Modules.Web", "Momolith.Modules\Momolith.Modules.Web\Momolith.Modules.Web.csproj", "{65A1BE7E-27C7-450C-8C5C-79F7311BF2C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F32EDCF-575C-492F-8BA8-27869306E7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F32EDCF-575C-492F-8BA8-27869306E7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F32EDCF-575C-492F-8BA8-27869306E7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F32EDCF-575C-492F-8BA8-27869306E7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A1BE7E-27C7-450C-8C5C-79F7311BF2C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A1BE7E-27C7-450C-8C5C-79F7311BF2C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A1BE7E-27C7-450C-8C5C-79F7311BF2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A1BE7E-27C7-450C-8C5C-79F7311BF2C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F32EDCF-575C-492F-8BA8-27869306E7A6} = {822DBB09-D6DE-470F-899A-EB51A6BE1BF0}
+		{65A1BE7E-27C7-450C-8C5C-79F7311BF2C2} = {822DBB09-D6DE-470F-899A-EB51A6BE1BF0}
+	EndGlobalSection
+EndGlobal
