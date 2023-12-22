@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.FeatureManagement;
-using OneOf;
 
 namespace FeatureSlice;
 
@@ -13,12 +12,18 @@ public static class ServiceCollectionExtensions
     {
         services.AddFeatureManagement();
         
-        TService.RegisterDispatcher(services);
+        TService.RegisterDispatcher<TImplementation>(services);
         services.TryAddTransient<TService, TImplementation>();
+    }
+    
+    public static void AddFeaturePipeline<TImplementation>(this IServiceCollection services)
+        where TImplementation : class, IFeatureSlicePipelineBase<TImplementation>
+    {
+        TImplementation.RegisterPipeline<TImplementation>(services);
     }
 
     public static string GetFeatureName<TFeature>(this TFeature feature)
-        where TFeature : IFeatureSliceBase
+        where TFeature : IFeatureName
     {
         return TFeature.FeatureName;
     }

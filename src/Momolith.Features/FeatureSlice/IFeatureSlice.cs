@@ -3,11 +3,15 @@ using OneOf;
 
 namespace FeatureSlice;
 
-public interface IFeatureSliceBase
+public interface IFeatureName
 {
     public static abstract string FeatureName { get; }
+}
 
-    public static abstract void RegisterDispatcher(IServiceCollection collection);
+public interface IFeatureSliceBase : IFeatureName
+{
+    public static abstract void RegisterDispatcher<T>(IServiceCollection collection)
+        where T : IFeatureSliceBase;
 }
 
 public interface IFeatureSlice<TRequest, TResponse> : IFeatureSliceBase
@@ -16,16 +20,16 @@ public interface IFeatureSlice<TRequest, TResponse> : IFeatureSliceBase
 
     protected Task<TResponse> Handle(TRequest request);
 
-    static void IFeatureSliceBase.RegisterDispatcher(IServiceCollection collection)
+    static void IFeatureSliceBase.RegisterDispatcher<T>(IServiceCollection collection)
     {
-        collection.AddSingleton<IDispatcher<TRequest, TResponse>, FeatureSliceDispatcher<TRequest, TResponse>>();
+        collection.AddSingleton<IDispatcher<TRequest, TResponse>, FeatureSliceDispatcher<TRequest, TResponse, T>>();
     }
     
     public async Task<OneOf<TResponse, Disabled, Exception>> Send(TRequest request)
     {
         try
         {
-            var response = await Dispatcher.Send(this, request);
+            var response = await Dispatcher.Send(Handle, request);
 
             return response.Match<OneOf<TResponse, Disabled, Exception>>(r => r, d => d);
         }
