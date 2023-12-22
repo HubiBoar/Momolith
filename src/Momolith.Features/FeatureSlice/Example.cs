@@ -12,7 +12,7 @@ public class ExampleResponse
 
 public interface IFeatureExample : IFeatureSlice<ExampleRequest, ExampleResponse>
 {
-    static string IFeatureName.FeatureName => "FeatureExample";
+    static string IFeatureToggle.FeatureName => "FeatureExample";
 }
 
 internal sealed class FeatureExample : IFeatureExample

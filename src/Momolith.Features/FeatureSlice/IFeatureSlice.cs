@@ -3,12 +3,12 @@ using OneOf;
 
 namespace FeatureSlice;
 
-public interface IFeatureName
+public interface IFeatureToggle
 {
     public static abstract string FeatureName { get; }
 }
 
-public interface IFeatureSliceBase : IFeatureName
+public interface IFeatureSliceBase : IFeatureToggle
 {
     public static abstract void RegisterDispatcher<T>(IServiceCollection collection)
         where T : IFeatureSliceBase;
@@ -16,7 +16,7 @@ public interface IFeatureSliceBase : IFeatureName
 
 public interface IFeatureSlice<TRequest, TResponse> : IFeatureSliceBase
 {
-    public IDispatcher<TRequest, TResponse> Dispatcher { get; }
+    internal IDispatcher<TRequest, TResponse> Dispatcher { get; }
 
     protected Task<TResponse> Handle(TRequest request);
 

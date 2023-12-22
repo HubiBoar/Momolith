@@ -12,7 +12,7 @@ public interface IDispatcher<TRequest, TResponse>
 
 internal sealed class FeatureSliceDispatcher<TRequest, TResponse, TFeatureName>
     : IDispatcher<TRequest, TResponse>
-    where TFeatureName : IFeatureName
+    where TFeatureName : IFeatureToggle
 {
     private readonly IFeatureManager _featureManager;
     private readonly IFeatureSlicePipeline<TRequest, TResponse>[] _pipelines;

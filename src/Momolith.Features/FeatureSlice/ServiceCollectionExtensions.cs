@@ -23,7 +23,7 @@ public static class ServiceCollectionExtensions
     }
 
     public static string GetFeatureName<TFeature>(this TFeature feature)
-        where TFeature : IFeatureName
+        where TFeature : IFeatureToggle
     {
         return TFeature.FeatureName;
     }
