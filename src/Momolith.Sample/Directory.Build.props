@@ -1,0 +1,12 @@
+<Project>
+
+    <PropertyGroup>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <Dotnet>net8.0</Dotnet>
+        <ExplicitVersion>1.0.2</ExplicitVersion>
+        <MicrosoftExtensionsVersion>8.0.0</MicrosoftExtensionsVersion>
+    </PropertyGroup>
+</Project>
