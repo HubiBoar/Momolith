@@ -5,13 +5,13 @@ namespace FeatureSlice;
 
 public sealed record Disabled;
 
-public interface IFeatureSliceDispatcher<TRequest, TResponse>
+public interface IDispatcher<TRequest, TResponse>
 {
-    internal Task<OneOf<TResponse, Disabled>> Send<TFeature>(TFeature feature, TRequest request)
-        where TFeature : IFeatureSlice<TRequest, TResponse>;
+    internal Task<OneOf<TResponse, Disabled>> Send(IFeatureSlice<TRequest, TResponse> featureSlice, TRequest request);
 }
 
-internal sealed class FeatureSliceDispatcher<TRequest, TResponse> : IFeatureSliceDispatcher<TRequest, TResponse>
+internal sealed class FeatureSliceDispatcher<TRequest, TResponse>
+    : IDispatcher<TRequest, TResponse>
 {
     private readonly IFeatureManager _featureManager;
     private readonly IEnumerable<IFeatureSlicePipeline<TRequest, TResponse>> _pipelines;
@@ -24,10 +24,9 @@ internal sealed class FeatureSliceDispatcher<TRequest, TResponse> : IFeatureSlic
         _pipelines = pipelines;
     }
     
-    public async Task<OneOf<TResponse, Disabled>> Send<TFeature>(TFeature feature, TRequest request)
-        where TFeature : IFeatureSlice<TRequest, TResponse>
+    public async Task<OneOf<TResponse, Disabled>> Send(IFeatureSlice<TRequest, TResponse> featureSlice, TRequest request)
     {
-        var enabled = await _featureManager.IsEnabledAsync(TFeature.FeatureName);
+        var enabled = await _featureManager.IsEnabledAsync(featureSlice.FeatureName);
 
         if (enabled == false)
         {

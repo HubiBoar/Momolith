@@ -12,22 +12,21 @@ public class ExampleResponse
 
 public interface IFeatureExample : IFeatureSlice<ExampleRequest, ExampleResponse>
 {
+    static string IFeatureSliceBase.FeatureName => "FeatureExample";
 }
 
 internal sealed class FeatureExample : IFeatureExample
 {
-    public static string FeatureName { get; } = "FeatureExample";
-
-    public IFeatureSliceDispatcher<ExampleRequest, ExampleResponse> Dispatcher { get; }
+    public IDispatcher<ExampleRequest, ExampleResponse> Dispatcher { get; }
     
-    public FeatureExample(IFeatureSliceDispatcher<ExampleRequest, ExampleResponse> dispatcher)
+    public FeatureExample(IDispatcher<ExampleRequest, ExampleResponse> dispatcher)
     {
         Dispatcher = dispatcher;
     }
 
     public Task<ExampleResponse> Handle(ExampleRequest request)
     {
-        
+        return Task.FromResult(new ExampleResponse());
     }
 }
 
@@ -35,6 +34,11 @@ public class RegistrationExample
 {
     public void Register(IServiceCollection collection)
     {
-        collection.AddFeature<FeatureExample>();
+        collection.AddFeature<IFeatureExample, FeatureExample>();
+    }
+
+    public void Send(IFeatureExample example)
+    {
+        var result = example.Send(new ExampleRequest());
     }
 }
