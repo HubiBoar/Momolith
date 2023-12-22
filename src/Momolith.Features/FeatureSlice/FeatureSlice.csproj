@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>$(Dotnet)</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Momolith.Modules\Momolith.Modules\Momolith.Modules.Web\Momolith.Modules.Web.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.FeatureManagement.AspNetCore" />
+        <PackageReference Include="Explicit.Utils" />
+    </ItemGroup>
+
+</Project>

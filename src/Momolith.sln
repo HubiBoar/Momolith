@@ -68,9 +68,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Cloud.Azure.AppCon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Cloud.Azure.AppConfiguration", "Momolith.Modules.Providers\Azure\AppConfiguration\Momolith.Cloud.Azure.AppConfiguration\Momolith.Cloud.Azure.AppConfiguration.csproj", "{291B91AC-70C0-47E7-B4F4-0F669331288B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Features", "Momolith.Features", "{70874D23-CD28-4E9F-AA65-97439EB3D909}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FeatureSlice", "FeatureSlice", "{70874D23-CD28-4E9F-AA65-97439EB3D909}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Features", "Momolith.Features\Momolith.Features\Momolith.Features.csproj", "{EB9D9BF6-5EEF-4677-A9F5-8867622FC36E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureSlice", "Momolith.Features\FeatureSlice\FeatureSlice.csproj", "{EB9D9BF6-5EEF-4677-A9F5-8867622FC36E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
