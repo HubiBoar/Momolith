@@ -1,5 +1,4 @@
 ﻿using Explicit.Configuration;
-using Explicit.Utils;
 using Explicit.Validation;
 using Microsoft.Extensions.Hosting;
 using Momolith.ConfigurationAsCode;
@@ -8,20 +7,19 @@ namespace Momolith.Modules.Configuration;
 
 public sealed class ConfigurationModule : IModule
 {
-    private IHostApplicationBuilder Startup { get; }
-    private IConfigurationModifier Modifier { get; }
-    private ConfigurationAsCodeEnabled ConfigurationAsCode { get; }
+    private readonly IHostApplicationBuilder _startup;
+    private readonly ConfigurationAsCodeEnabled _configurationAsCode;
+    private readonly IConfigurationModifier _modifier;
 
     private ConfigurationModule(
         IHostApplicationBuilder startup,
         ConfigurationAsCodeEnabled configurationAsCode,
         IConfigurationModifier modifier)
     {
-        Startup = startup;
-        Modifier = modifier;
-        Modifier.DownloadConfiguration(Startup.Configuration);
-
-        ConfigurationAsCode = configurationAsCode;
+        _startup = startup;
+        _configurationAsCode = configurationAsCode;
+        _modifier = modifier;
+        _modifier.DownloadConfiguration(_startup.Configuration);
     }
 
     public static ConfigurationModule Create(
@@ -35,15 +33,15 @@ public sealed class ConfigurationModule : IModule
     public void AddConfig<TOptions>(IConfigurationAsCode<TOptions> configAsCode)
         where TOptions : IConfigObject<TOptions>
     {
-        Modifier.TryUpload(ConfigurationAsCode, configAsCode);
+        _modifier.TryUpload(_configurationAsCode, configAsCode);
         
-        Startup.Services.AddConfig<TOptions>(Startup.Configuration);
+        _startup.Services.AddConfig<TOptions>(_startup.Configuration);
     }
 
     public IsValid<TOptions> AddGetConfig<TOptions>(IConfigurationAsCode<TOptions> configAsCode)
         where TOptions : IConfigObject<TOptions>
     {
         AddConfig(configAsCode);
-        return Startup.Configuration.GetValid<TOptions>();
+        return _startup.Configuration.GetValid<TOptions>();
     }
 }

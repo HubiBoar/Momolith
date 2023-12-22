@@ -6,12 +6,12 @@ namespace Momolith.Modules.Messaging;
 
 public sealed class MessagingModule : IModule
 {
-    private IHostApplicationBuilder Startup { get; }
+    private readonly IHostApplicationBuilder _startup;
 
     private MessagingModule(IHostApplicationBuilder startup)
     {
-        startup.Services.AddHostedService<MessageConsumersRegisterer>();
-        Startup = startup;
+        _startup = startup;
+        _startup.Services.AddHostedService<MessageConsumersRegisterer>();
     }
     
     public static MessagingModule Create(IHostApplicationBuilder startup, IMessagingConsumerConfiguration configuration)
@@ -36,6 +36,6 @@ public sealed class MessagingModule : IModule
     public void AddConsumer<T>()
         where T : class, IMessageConsumerSetup
     {
-        Startup.Services.AddSingleton<IMessageConsumerSetup, T>();
+        _startup.Services.AddSingleton<IMessageConsumerSetup, T>();
     }
 }

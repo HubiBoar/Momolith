@@ -42,6 +42,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.DeploymentAsCode",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.DeploymentAsCode", "Momolith.DeploymentAsCode\Momolith.DeploymentAsCode\Momolith.DeploymentAsCode.csproj", "{4F820433-417C-4878-BBDC-46CB578BD97A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Modules.Deployment", "Momolith.Modules.Deployment", "{0CF0CDDE-E8B9-4637-A4DA-AEF12E6D0DBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Modules.Deployment", "Momolith.Modules\Momolith.Modules.Deployment\Momolith.Modules.Deployment\Momolith.Modules.Deployment.csproj", "{6C3F4E5F-73E0-4741-AEF4-576E1C0D7CC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,6 +88,10 @@ Global
 		{4F820433-417C-4878-BBDC-46CB578BD97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F820433-417C-4878-BBDC-46CB578BD97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F820433-417C-4878-BBDC-46CB578BD97A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C3F4E5F-73E0-4741-AEF4-576E1C0D7CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C3F4E5F-73E0-4741-AEF4-576E1C0D7CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C3F4E5F-73E0-4741-AEF4-576E1C0D7CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C3F4E5F-73E0-4741-AEF4-576E1C0D7CC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2F32EDCF-575C-492F-8BA8-27869306E7A6} = {EEB3EBA0-FCFF-4CA0-9E00-F4D94E8F66BA}
@@ -101,5 +109,7 @@ Global
 		{F3B770AF-5B1D-4490-B044-E6EE4C17A3B3} = {C2F2AE42-0625-4637-98E1-5522CE2AE080}
 		{6AF2C175-C9D5-4787-9913-A276A3F2A86C} = {1480859B-D233-4BBD-B94D-1599A7A626B6}
 		{4F820433-417C-4878-BBDC-46CB578BD97A} = {37672358-258B-4FBA-BBF0-8A23FD53798D}
+		{0CF0CDDE-E8B9-4637-A4DA-AEF12E6D0DBC} = {822DBB09-D6DE-470F-899A-EB51A6BE1BF0}
+		{6C3F4E5F-73E0-4741-AEF4-576E1C0D7CC0} = {0CF0CDDE-E8B9-4637-A4DA-AEF12E6D0DBC}
 	EndGlobalSection
 EndGlobal
