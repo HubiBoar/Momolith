@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# 
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Modules", "Momolith.Modules\Momolith.Modules\Momolith.Modules\Momolith.Modules.csproj", "{2F32EDCF-575C-492F-8BA8-27869306E7A6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Modules", "Momolith.Modules", "{822DBB09-D6DE-470F-899A-EB51A6BE1BF0}"
@@ -68,10 +71,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Cloud.Azure.AppCon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Cloud.Azure.AppConfiguration", "Momolith.Modules.Providers\Azure\AppConfiguration\Momolith.Cloud.Azure.AppConfiguration\Momolith.Cloud.Azure.AppConfiguration.csproj", "{291B91AC-70C0-47E7-B4F4-0F669331288B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FeatureSlice", "FeatureSlice", "{70874D23-CD28-4E9F-AA65-97439EB3D909}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureSlice", "Momolith.Features\FeatureSlice\FeatureSlice.csproj", "{EB9D9BF6-5EEF-4677-A9F5-8867622FC36E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -126,10 +125,9 @@ Global
 		{291B91AC-70C0-47E7-B4F4-0F669331288B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{291B91AC-70C0-47E7-B4F4-0F669331288B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{291B91AC-70C0-47E7-B4F4-0F669331288B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB9D9BF6-5EEF-4677-A9F5-8867622FC36E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB9D9BF6-5EEF-4677-A9F5-8867622FC36E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB9D9BF6-5EEF-4677-A9F5-8867622FC36E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB9D9BF6-5EEF-4677-A9F5-8867622FC36E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2F32EDCF-575C-492F-8BA8-27869306E7A6} = {EEB3EBA0-FCFF-4CA0-9E00-F4D94E8F66BA}
@@ -158,6 +156,5 @@ Global
 		{ABAB4D12-A7C3-434B-9109-5657B8BBD89D} = {144B0E9F-E587-4678-92EB-1B9A97D78922}
 		{FED6D39D-D6DA-4EB3-94AF-29A8F5D79EDE} = {ABAB4D12-A7C3-434B-9109-5657B8BBD89D}
 		{291B91AC-70C0-47E7-B4F4-0F669331288B} = {FED6D39D-D6DA-4EB3-94AF-29A8F5D79EDE}
-		{EB9D9BF6-5EEF-4677-A9F5-8867622FC36E} = {70874D23-CD28-4E9F-AA65-97439EB3D909}
 	EndGlobalSection
 EndGlobal
