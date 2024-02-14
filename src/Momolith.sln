@@ -1,160 +1,36 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
-VisualStudioVersion = 17.5.002.0
-MinimumVisualStudioVersion = 
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Modules", "Momolith.Modules\Momolith.Modules\Momolith.Modules\Momolith.Modules.csproj", "{2F32EDCF-575C-492F-8BA8-27869306E7A6}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{E827F25C-DCA2-4758-A935-88BECC5C76ED}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Modules", "Momolith.Modules", "{822DBB09-D6DE-470F-899A-EB51A6BE1BF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Modules", "Momolith.Modules\Momolith.Modules\Momolith.Modules.csproj", "{180AF80E-4595-4483-A73B-B622A47A6E1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Modules.Web", "Momolith.Modules\Momolith.Modules\Momolith.Modules.Web\Momolith.Modules.Web.csproj", "{65A1BE7E-27C7-450C-8C5C-79F7311BF2C2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{BE98BDC1-82ED-44B8-B2F5-797600E88B60}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Modules", "Momolith.Modules", "{EEB3EBA0-FCFF-4CA0-9E00-F4D94E8F66BA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Modules.Configuration", "Momolith.Modules.Configuration", "{1480859B-D233-4BBD-B94D-1599A7A626B6}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Modules.DataBase", "Momolith.Modules.DataBase", "{7B2E362D-539D-4D10-860B-C825E73D9522}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Modules.Gateway", "Momolith.Modules.Gateway", "{5DA9A813-0F29-4457-B395-54F3E46A614E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Modules.Messaging", "Momolith.Modules.Messaging", "{A4547AD4-7956-4D46-822F-724CE8154D98}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Modules.Storage", "Momolith.Modules.Storage", "{51D770F6-03DA-4B33-8AE2-919810011FCB}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.EnvironmentAsCode", "Momolith.EnvironmentAsCode", "{E77D6FD7-D67E-446A-9621-9BDFB97F5624}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.DependencyAsCode", "Momolith.DependencyAsCode", "{685E9599-2953-4BC2-80E4-77C733E37316}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.EnvironmentAsCode", "Momolith.EnvironmentAsCode\Momolith.EnvironmentAsCode\Momolith.EnvironmentAsCode.csproj", "{1233C0A3-E037-437C-A757-735A95C36046}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.DependencyAsCode", "Momolith.DependencyAsCode\Momolith.DependencyAsCode\Momolith.DependencyAsCode.csproj", "{8B3FDEFE-265E-4A87-A05E-2DB76B202A3D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Modules.Messaging", "Momolith.Modules\Momolith.Modules.Messaging\Momolith.Modules.Messaging\Momolith.Modules.Messaging.csproj", "{8DB7EAF6-38A6-4B32-80BF-EA62C7A310BC}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.InfrastructureAsCode", "Momolith.InfrastructureAsCode", "{E2ECCF3B-622C-4436-9075-3C1EF0B1158C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.InfrastructureAsCode", "Momolith.InfrastructureAsCode\Momolith.InfrastructureAsCode\Momolith.InfrastructureAsCode.csproj", "{83DCAC63-38D4-4CFC-A703-9A532B6F41B4}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.ConfigurationAsCode", "Momolith.ConfigurationAsCode", "{C2F2AE42-0625-4637-98E1-5522CE2AE080}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.ConfigurationAsCode", "Momolith.ConfigurationAsCode\Momolith.ConfigurationAsCode\Momolith.ConfigurationAsCode.csproj", "{F3B770AF-5B1D-4490-B044-E6EE4C17A3B3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Modules.Configuration", "Momolith.Modules\Momolith.Modules.Configuration\Momolith.Modules.Configuration\Momolith.Modules.Configuration.csproj", "{6AF2C175-C9D5-4787-9913-A276A3F2A86C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.DeploymentAsCode", "Momolith.DeploymentAsCode", "{37672358-258B-4FBA-BBF0-8A23FD53798D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.DeploymentAsCode", "Momolith.DeploymentAsCode\Momolith.DeploymentAsCode\Momolith.DeploymentAsCode.csproj", "{4F820433-417C-4878-BBDC-46CB578BD97A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Modules.Deployment", "Momolith.Modules.Deployment", "{0CF0CDDE-E8B9-4637-A4DA-AEF12E6D0DBC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Modules.Deployment", "Momolith.Modules\Momolith.Modules.Deployment\Momolith.Modules.Deployment\Momolith.Modules.Deployment.csproj", "{6C3F4E5F-73E0-4741-AEF4-576E1C0D7CC0}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Samples", "Momolith.Samples", "{0D3BFF6F-CA1E-4812-B1F6-CE6D21D6E1FD}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Samples.WebApp", "Momolith.Samples.WebApp", "{1BD40D94-F660-40EE-8A74-4924A65F35DA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{78C74DF2-25B7-47FD-9EC0-FB0FB5B6346B}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppHost", "AppHost", "{2F71D53D-7BD9-4499-8516-277ADCC22D98}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHost", "Momolith.Sample\Momolith.Samples.WebApp\AppHost\AppHost.csproj", "{079E9189-C7A5-4F28-A650-FDD7226946E8}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{D441AD11-4179-416A-AF92-2E398B7C2ECC}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orders", "Orders", "{8E67039D-6DF6-49DF-8842-22BB22A3F4EA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Cloud", "Momolith.Cloud", "{144B0E9F-E587-4678-92EB-1B9A97D78922}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Cloud.Azure", "Momolith.Cloud.Azure", "{ABAB4D12-A7C3-434B-9109-5657B8BBD89D}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Momolith.Cloud.Azure.AppConfiguration", "Momolith.Cloud.Azure.AppConfiguration", "{FED6D39D-D6DA-4EB3-94AF-29A8F5D79EDE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Cloud.Azure.AppConfiguration", "Momolith.Modules.Providers\Azure\AppConfiguration\Momolith.Cloud.Azure.AppConfiguration\Momolith.Cloud.Azure.AppConfiguration.csproj", "{291B91AC-70C0-47E7-B4F4-0F669331288B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momolith.Samples.Console", "Momolith.Samples\Console\Momolith.Samples.Console.csproj", "{4152D480-303A-40D8-BF90-DB8EAE29358B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2F32EDCF-575C-492F-8BA8-27869306E7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F32EDCF-575C-492F-8BA8-27869306E7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F32EDCF-575C-492F-8BA8-27869306E7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F32EDCF-575C-492F-8BA8-27869306E7A6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65A1BE7E-27C7-450C-8C5C-79F7311BF2C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65A1BE7E-27C7-450C-8C5C-79F7311BF2C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65A1BE7E-27C7-450C-8C5C-79F7311BF2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65A1BE7E-27C7-450C-8C5C-79F7311BF2C2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1233C0A3-E037-437C-A757-735A95C36046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1233C0A3-E037-437C-A757-735A95C36046}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1233C0A3-E037-437C-A757-735A95C36046}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1233C0A3-E037-437C-A757-735A95C36046}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8B3FDEFE-265E-4A87-A05E-2DB76B202A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B3FDEFE-265E-4A87-A05E-2DB76B202A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B3FDEFE-265E-4A87-A05E-2DB76B202A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B3FDEFE-265E-4A87-A05E-2DB76B202A3D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8DB7EAF6-38A6-4B32-80BF-EA62C7A310BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8DB7EAF6-38A6-4B32-80BF-EA62C7A310BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8DB7EAF6-38A6-4B32-80BF-EA62C7A310BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8DB7EAF6-38A6-4B32-80BF-EA62C7A310BC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{83DCAC63-38D4-4CFC-A703-9A532B6F41B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83DCAC63-38D4-4CFC-A703-9A532B6F41B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83DCAC63-38D4-4CFC-A703-9A532B6F41B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83DCAC63-38D4-4CFC-A703-9A532B6F41B4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F3B770AF-5B1D-4490-B044-E6EE4C17A3B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3B770AF-5B1D-4490-B044-E6EE4C17A3B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3B770AF-5B1D-4490-B044-E6EE4C17A3B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3B770AF-5B1D-4490-B044-E6EE4C17A3B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6AF2C175-C9D5-4787-9913-A276A3F2A86C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6AF2C175-C9D5-4787-9913-A276A3F2A86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6AF2C175-C9D5-4787-9913-A276A3F2A86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6AF2C175-C9D5-4787-9913-A276A3F2A86C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4F820433-417C-4878-BBDC-46CB578BD97A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F820433-417C-4878-BBDC-46CB578BD97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F820433-417C-4878-BBDC-46CB578BD97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F820433-417C-4878-BBDC-46CB578BD97A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6C3F4E5F-73E0-4741-AEF4-576E1C0D7CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6C3F4E5F-73E0-4741-AEF4-576E1C0D7CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6C3F4E5F-73E0-4741-AEF4-576E1C0D7CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6C3F4E5F-73E0-4741-AEF4-576E1C0D7CC0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{079E9189-C7A5-4F28-A650-FDD7226946E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{079E9189-C7A5-4F28-A650-FDD7226946E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{079E9189-C7A5-4F28-A650-FDD7226946E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{079E9189-C7A5-4F28-A650-FDD7226946E8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{291B91AC-70C0-47E7-B4F4-0F669331288B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{291B91AC-70C0-47E7-B4F4-0F669331288B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{291B91AC-70C0-47E7-B4F4-0F669331288B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{291B91AC-70C0-47E7-B4F4-0F669331288B}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{180AF80E-4595-4483-A73B-B622A47A6E1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180AF80E-4595-4483-A73B-B622A47A6E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180AF80E-4595-4483-A73B-B622A47A6E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180AF80E-4595-4483-A73B-B622A47A6E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4152D480-303A-40D8-BF90-DB8EAE29358B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4152D480-303A-40D8-BF90-DB8EAE29358B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4152D480-303A-40D8-BF90-DB8EAE29358B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4152D480-303A-40D8-BF90-DB8EAE29358B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{2F32EDCF-575C-492F-8BA8-27869306E7A6} = {EEB3EBA0-FCFF-4CA0-9E00-F4D94E8F66BA}
-		{65A1BE7E-27C7-450C-8C5C-79F7311BF2C2} = {EEB3EBA0-FCFF-4CA0-9E00-F4D94E8F66BA}
-		{EEB3EBA0-FCFF-4CA0-9E00-F4D94E8F66BA} = {822DBB09-D6DE-470F-899A-EB51A6BE1BF0}
-		{1480859B-D233-4BBD-B94D-1599A7A626B6} = {822DBB09-D6DE-470F-899A-EB51A6BE1BF0}
-		{7B2E362D-539D-4D10-860B-C825E73D9522} = {822DBB09-D6DE-470F-899A-EB51A6BE1BF0}
-		{5DA9A813-0F29-4457-B395-54F3E46A614E} = {822DBB09-D6DE-470F-899A-EB51A6BE1BF0}
-		{A4547AD4-7956-4D46-822F-724CE8154D98} = {822DBB09-D6DE-470F-899A-EB51A6BE1BF0}
-		{51D770F6-03DA-4B33-8AE2-919810011FCB} = {822DBB09-D6DE-470F-899A-EB51A6BE1BF0}
-		{1233C0A3-E037-437C-A757-735A95C36046} = {E77D6FD7-D67E-446A-9621-9BDFB97F5624}
-		{8B3FDEFE-265E-4A87-A05E-2DB76B202A3D} = {685E9599-2953-4BC2-80E4-77C733E37316}
-		{8DB7EAF6-38A6-4B32-80BF-EA62C7A310BC} = {A4547AD4-7956-4D46-822F-724CE8154D98}
-		{83DCAC63-38D4-4CFC-A703-9A532B6F41B4} = {E2ECCF3B-622C-4436-9075-3C1EF0B1158C}
-		{F3B770AF-5B1D-4490-B044-E6EE4C17A3B3} = {C2F2AE42-0625-4637-98E1-5522CE2AE080}
-		{6AF2C175-C9D5-4787-9913-A276A3F2A86C} = {1480859B-D233-4BBD-B94D-1599A7A626B6}
-		{4F820433-417C-4878-BBDC-46CB578BD97A} = {37672358-258B-4FBA-BBF0-8A23FD53798D}
-		{0CF0CDDE-E8B9-4637-A4DA-AEF12E6D0DBC} = {822DBB09-D6DE-470F-899A-EB51A6BE1BF0}
-		{6C3F4E5F-73E0-4741-AEF4-576E1C0D7CC0} = {0CF0CDDE-E8B9-4637-A4DA-AEF12E6D0DBC}
-		{1BD40D94-F660-40EE-8A74-4924A65F35DA} = {0D3BFF6F-CA1E-4812-B1F6-CE6D21D6E1FD}
-		{78C74DF2-25B7-47FD-9EC0-FB0FB5B6346B} = {1BD40D94-F660-40EE-8A74-4924A65F35DA}
-		{2F71D53D-7BD9-4499-8516-277ADCC22D98} = {1BD40D94-F660-40EE-8A74-4924A65F35DA}
-		{079E9189-C7A5-4F28-A650-FDD7226946E8} = {2F71D53D-7BD9-4499-8516-277ADCC22D98}
-		{D441AD11-4179-416A-AF92-2E398B7C2ECC} = {78C74DF2-25B7-47FD-9EC0-FB0FB5B6346B}
-		{8E67039D-6DF6-49DF-8842-22BB22A3F4EA} = {78C74DF2-25B7-47FD-9EC0-FB0FB5B6346B}
-		{ABAB4D12-A7C3-434B-9109-5657B8BBD89D} = {144B0E9F-E587-4678-92EB-1B9A97D78922}
-		{FED6D39D-D6DA-4EB3-94AF-29A8F5D79EDE} = {ABAB4D12-A7C3-434B-9109-5657B8BBD89D}
-		{291B91AC-70C0-47E7-B4F4-0F669331288B} = {FED6D39D-D6DA-4EB3-94AF-29A8F5D79EDE}
+		{180AF80E-4595-4483-A73B-B622A47A6E1F} = {E827F25C-DCA2-4758-A935-88BECC5C76ED}
+		{4152D480-303A-40D8-BF90-DB8EAE29358B} = {BE98BDC1-82ED-44B8-B2F5-797600E88B60}
 	EndGlobalSection
 EndGlobal
