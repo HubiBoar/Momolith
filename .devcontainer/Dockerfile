@@ -20,6 +20,11 @@ RUN apt-get install -y wget \
     && rm packages-microsoft-prod.deb
 
 RUN apt-get install -y dotnet-sdk-8.0 \
+    && apt-get install -y dotnet-runtime-8.0 \
+    && apt-get install -y aspnetcore-runtime-8.0 \
+    && apt-get install -y dotnet-sdk-7.0 \
+    && apt-get install -y dotnet-runtime-7.0 \
+    && apt-get install -y aspnetcore-runtime-7.0 \
     && apt-get install -y curl && curl -L https://aka.ms/InstallAzureCLIDeb | bash
 
 #stow
