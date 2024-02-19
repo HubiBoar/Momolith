@@ -10,7 +10,7 @@
 			"installDockerBuildx": true,
 			"version": "latest",
 			"dockerDashComposeVersion": "none"
-		},
+		}
 		// "ghcr.io/devcontainers/features/git:1": {
 		//     "version": "latest",
 		//     "ppa": "false"
