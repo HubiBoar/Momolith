@@ -1,8 +1,6 @@
 services:
   devcontainer:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: hubiboar/dotnet:latest
     volumes:
       - ../..:/workspaces:cached
       -  /var/run/docker.sock:/var/run/docker.sock
