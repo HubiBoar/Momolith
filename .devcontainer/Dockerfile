@@ -4,7 +4,8 @@ FROM amd64/ubuntu
 
 # --> LINUX
 
-RUN apt-get -y update
+RUN apt-get -y update \
+    && apt-get -qy full-upgrade
 
 #zsh
 RUN apt-get install -y zsh \
@@ -20,13 +21,12 @@ RUN apt-get install -y git \
 RUN apt-get install -y stow \
     && stow --dir="$HOME/dotfiles" --adopt .
 
+#curl
+RUN apt-get install -y curl
+
 #docker
+RUN curl -sSL https://get.docker.com/ | bash
 #docker run --privileged -v "/var/run/docker.sock:/var/run/docker.sock"
-RUN apt-get install -y docker
-RUN apt-get update && \
-    apt-get -qy full-upgrade && \
-    apt-get install -qy curl && \
-    curl -sSL https://get.docker.com/ | sh
 
 
 # --> DOTNET
@@ -46,4 +46,4 @@ RUN apt-get install -y dotnet-sdk-7.0 \
     && apt-get install -y aspnetcore-runtime-8.0
 
 #azure CLI
-RUN apt-get install -y curl && curl -L https://aka.ms/InstallAzureCLIDeb | bash
+RUN curl -sSL https://aka.ms/InstallAzureCLIDeb | bash
