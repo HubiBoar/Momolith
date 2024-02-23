@@ -9,13 +9,18 @@
         <RepositoryUrl>https://github.com/HubiBoar/Momolith</RepositoryUrl>
     </PropertyGroup>
     
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
     <ItemGroup>
         <None Include="../../../README.md" Pack="true" PackagePath="" Visible="false" />
         <None Include="../../../LICENSE" Pack="true" PackagePath="" Visible="false" />
     </ItemGroup>
     
     <PropertyGroup>
-        <Dotnet>net8.0</Dotnet>
         <DefinitVersion>1.0.4</DefinitVersion>
         <MicrosoftExtensionsVersion>8.0.0</MicrosoftExtensionsVersion>
     </PropertyGroup>
